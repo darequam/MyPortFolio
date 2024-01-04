@@ -11,7 +11,7 @@ header{
     top: 0;  
     left: 0;  
     align-items: center;
-    justify-content: space-between;
+    justify-content:space-between;
     z-index: 1;
     border: solid grey 1px;
 
@@ -19,7 +19,9 @@ header{
 
 h1{
     font-family: Merriweather, sans-serif; 
-    margin-left: 1rem;   
+    margin-left: 1rem; 
+    /* background-color: aqua; */
+    min-width:50%;
 }
 
 h2{
@@ -33,22 +35,38 @@ h3{
 }
 
 nav{
-    margin-right: 2rem;
+    margin-right: 1rem;
+    /* background-color: bisque;     */
     
 }
+
 nav ul{
     display: flex;
     list-style: none;
     
 }
 
-nav ul li{
+.button{
     margin-right: 0.8rem;    
     border-radius: 8%;
     background-color: antiquewhite;
     border: inset black;
-    padding: .2rem .2rem;
+    padding: .1rem .15rem;
 
+}
+
+/* .button:active{
+    background-color: cyan;
+    box-shadow: 1px 3px;
+} */
+
+
+header a{
+    text-decoration: none;
+    color: inherit ;
+    font-family: 'Roboto Mono', sans-serif;;
+    font-size:70%;
+    font-weight: bold;
 }
 
 #content{
@@ -57,23 +75,20 @@ nav ul li{
 }
 
 #bio{
-    display: flex;
-    height: 25rem ;
-    width: 100%;
-    /* background-color: antiquewhite; */
-    justify-content: space-between;
-    
+    display: flex;    
+    width: 100%;   
+    justify-content: space-between;    
 }
 
 #about-me{
-    width: 90%;
+    width: 90%;    
     padding: 0 5rem 0 .5rem;
     border-style: dotted;
     margin-right: 2rem;
     border-radius: 5%;
     background-color: aliceblue;
 }
-.images-container{
+#images-container{
     overflow: hidden; 
     /* height:auto;    */
     /* background-color: aliceblue;   */
@@ -87,6 +102,7 @@ nav ul li{
     border-radius: 5%;
 }
 
+
 #project-skill{
     margin-top: 10rem;    
     display: flex;
@@ -99,7 +115,7 @@ nav ul li{
     background-color: aliceblue;
 }
 
-#project h2{
+#project h2, #skills h2{
     margin-bottom: 2rem;
     background-color: antiquewhite;
     border: inset black;
@@ -110,20 +126,21 @@ nav ul li{
 
 #project h3{
     margin-bottom:1.5rem ;
+    
+}
+
+#project h3 a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#project h3 a:after{
+    color :blueviolet;
 }
 
 #skills{
     width: 50%;
     background-color: aliceblue;
-}
-
-#skills h2{
-    margin-bottom: 2rem;
-    background-color: antiquewhite;
-    border: inset black;
-    margin-right: 16rem;
-    padding: .5rem .5rem;
-    border-radius: 7%;
 }
 
 #skills ul{
@@ -139,6 +156,11 @@ nav ul li{
     width: 2.6rem;    
 }
 
+.logo:hover{
+    height: 3rem;
+    width: 3.2rem;
+}
+
 footer{
     position: relative;
     margin-top: 14rem;
@@ -148,4 +170,100 @@ footer{
 
 footer p{
     text-align: center;
+}
+
+@media only screen and (max-width: 800px){
+
+    header{
+        height: auto;
+    }
+    nav ul{
+        display: block; 
+        margin-top: 0.3rem;       
+    }
+    .button{
+        margin-bottom: .3rem;
+        border-radius: 10%;
+        padding: .2rem 1rem;
+        text-align: center;
+        
+    }
+    h1{
+        margin: 0 auto;
+    }
+
+    #content{
+        top: 12rem;
+    }
+
+    #bio{
+        display:block;
+    }
+    #about-me{
+        width: auto;
+        padding: 0rem 1rem;
+        margin: auto;
+        text-align: left;
+    }
+
+    #images-container{
+        margin: 2rem auto;
+        /* background-color: red; */
+
+    }
+
+    #my-image{
+        display: block;
+        margin: auto;
+        /* background-color: blue ; */
+        height: 70%;
+        
+    }
+
+    #project h2, #skills h2{
+        margin: auto;
+        /* background-color: aqua; */
+    }
+}
+
+@media only screen and (max-width: 580px){
+    header{
+        display: block;
+    }
+
+    header h1{
+        text-align: center;
+        margin: auto;
+        min-width: 50%;
+        font-size: 160%;        
+    }
+
+    nav{        
+        margin:  auto;
+    }
+    nav ul{
+        display: flex;
+        /* background-color: aqua; */
+        margin: auto; 
+        padding: 0;
+        justify-content: space-around;
+        
+    }
+    .button{
+        margin: 1rem 0;
+        border-radius: 10%;
+        padding: .2rem .5rem;
+        text-align: center;        
+    }
+
+    header a{
+        font-size: 70%;
+    }
+
+    #project-skill{
+        display: block;
+    }
+    #project, #skills{
+        width: auto;
+    }
 }

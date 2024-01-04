@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Merriweather:wght@900&family=Poppins:ital,wght@0,200;0,400;0,500;0,700;0,800;1,400;1,700;1,800&family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- <script src="/portfolio.js" type="text/javascript" > </script> -->
 </head>
 
 <body>
@@ -15,10 +16,10 @@
         <h1 id="Main Heading">The Full-Stack Engineer</h1>
         <nav>
             <ul>
-                <li>About Me</li>
-                <li>My projects</li>
-                <li>Skills</li>
-                <li>Contact Me</li>
+                <li class="button" ><a href="#bio">About Me</a></li>
+                <li class="button"><a href="#project">My Projects</a></li>
+                <li class="button"><a href="#skills">Skills</a></li>
+                <li class="button"><a href="/Contact.html">Contact Me</a></li>
             </ul>
         </nav>
     </header>
@@ -26,7 +27,7 @@
     <main id="content">
         <div id="bio">
             <div id="about-me">
-                <h2>DareQuam</h2>
+                <h2 id="myName">DareQuam</h2>
                 <p>My full-name is Aregbesola Oludare, a Mechanical Engineering graduate and an enthusiastic 
                     computer programmer.<br>
                     While I might still be in my early days as a programmer, I'm conversant with the use of many 
@@ -39,7 +40,7 @@
                     In all, I look forward to working with you.
                 </p>
             </div>
-            <div class="images-container">
+            <div id="images-container">
                 <img src="/agba.jpg" id="my-image" alt="an image of the programmer">
             </div>            
         </div>
@@ -47,11 +48,11 @@
             <div id="project">
                 <h2>Projects</h2>
                 <ol>
-                    <li><h3>My Web Guide</h3></li>
-                    <li><h3>DoCare Company Page</h3></li>
-                    <li><h3>FotoMatic</h3></li>
-                    <li><h3>Tea Cozy Website</h3></li>
-                    <li><h3>Message Generator</h3></li>
+                    <li><h3><a href="">My Web Guide</a></h3></li>
+                    <li><h3><a href="">DoCare Company Page</a></h3></li>
+                    <li><h3><a href="">FotoMatic</a></h3></li>
+                    <li><h3><a href="">Tea Cozy Website</a></h3></li>
+                    <li><h3><a href="">Message Generator</a></h3></li>
                 </ol>           
                 
             </div>
@@ -92,15 +93,17 @@
 
     </main>
     <footer>
-        <p>Made in Preston</p>
+        <p>Made in Preston<em>(2023).</em></p>
     </footer>
     
 
+    <script src="portfolio.js">
+        
+    </script>
 
 
 
-
-    <script src="/portfolio.js" > </script>
+    
 </body>
 
 
