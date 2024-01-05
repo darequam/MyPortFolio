@@ -1,0 +1,174 @@
+
+*{
+    opacity:0.9;
+    font-family: Helvetica;
+    font-size: 22px;
+}
+
+body {
+    background-color:black;    
+    
+}
+
+
+header{    
+    position: fixed;
+    display: inline-flex;
+    height: 69px;
+    background-color:black;
+    width: 100%;
+    border-bottom: 1px solid seashell;
+    align-items: center; 
+    opacity:1;
+    z-index: 1;  
+    
+}
+    
+#logo{
+    margin-left:10px;
+    opacity:0.9;
+}
+
+nav{
+    background-color: transparent;
+    margin-left: 680px;
+}
+
+nav ul li{
+    display:inline;
+    margin-right:20px; 
+       
+}
+
+a{
+    font-family:Helvetica, sans-serif;
+    font-size: 22px;
+    color: seashell;           
+}
+
+
+main{
+    display:flex;
+    align-items: center;
+    width: 1200px;
+    height: 700px;
+    background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg');
+    position:relative;
+    top: 70px;
+    margin: 0 auto;  
+    
+}
+
+h2{font-size: 30px;
+    color:seashell;
+    font-weight: 800;
+}
+h4{font-size: 22px;
+    color:seashell;
+    font-weight: 800;
+}
+
+#mainDiv{
+    background-color: rgb(0, 0, 0);
+    width:100%; 
+    height:90px;
+    text-align: center; 
+    opacity:1; 
+   }  
+
+#mainDiv h4 {    
+    margin-top: 0;
+}
+#mainDiv h2{
+    padding: 0;
+    margin-top: 2px;
+    margin-bottom: 3px;
+}
+
+.month{
+    position:relative;
+    top: 100px;
+    margin: 0 auto;
+    width: 1000px;
+}
+.month h2, h4{
+    text-align:center;
+    letter-spacing: 0.1px;
+    word-spacing:0.1px;
+}
+
+.top{     
+    display:flex; 
+    justify-content: center;  
+    
+}
+
+.bottom{
+    display:flex; 
+    justify-content: center;  
+}
+
+.location{
+    height: 500px;
+    padding: 30px ;
+    width: 1000 ;                                                                                                                                                                                                                                                                                                                                                                                                                      0px;
+    background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg') ;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.location div{
+    margin:0 auto;
+    opacity:1;
+}                                                                                                                                                                                                                                                                                                                
+
+#loc{
+    text-align:center;
+    letter-spacing: 0.1px;
+    font-size: 30px;
+    color:seashell;
+    font-weight: 800;    
+    margin-bottom: 15px;
+}
+
+.address{
+    display:flex;
+    justify-content: center;
+}
+
+.address div{
+    width:300px;
+    height:300px;
+    margin: 15px 20px;
+    background-color: black;
+    opacity: 1;
+}
+
+
+.address div h3, p{
+    text-align:center;
+    letter-spacing: 0.1px;
+    color:seashell;
+    line-height: 55px;       
+}
+
+footer{
+    position: relative;
+    top:90px;    
+}
+
+footer div{
+    text-align: center;
+}
+footer h5 div h2, h5{ 
+    letter-spacing: 0.1px;
+    color:seashell;
+    line-height: 45px;  
+}
+
+footer h5{
+    margin-left: 20px;
+}

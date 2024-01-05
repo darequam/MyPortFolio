@@ -55,10 +55,10 @@ nav ul{
 
 }
 
-/* .button:active{
+.button:active{
     background-color: cyan;
     box-shadow: 1px 3px;
-} */
+}
 
 
 header a{
@@ -72,6 +72,15 @@ header a{
 #content{
     position: relative;
     top: 8rem;
+}
+
+#contact{
+    text-align: center;
+    margin: 1rem 7rem;
+    padding: 1rem auto;
+    width: auto;
+    background-color: rgb(105, 170, 255);
+    border-radius: 5%;
 }
 
 #bio{
@@ -193,8 +202,9 @@ footer p{
     }
 
     #content{
-        top: 12rem;
-    }
+        top: 12rem;    }
+
+    
 
     #bio{
         display:block;
@@ -266,4 +276,42 @@ footer p{
     #project, #skills{
         width: auto;
     }
+}
+
+
+/* Message Game section */
+
+#game{
+    border: solid rgb(50, 47, 47) 2px;
+    background-color: red;
+    border-radius: 5px;
+    margin: auto;
+    height: 25rem;
+    width: 55%;
+}
+
+#game1{
+    border: solid green 1px;
+    margin: 2rem auto;
+    background-color: khaki;
+    height:75%;
+    width: 75%;  
+    z-index: 0; 
+    
+}
+
+#game2{
+    border: solid pink 1px;
+    margin: 2rem auto;
+    background-color: rgb(100, 63, 18);
+    height:75%;
+    width: 75%;     
+}
+
+#game3{
+    border: solid pink 1px;
+    margin: 2rem auto;
+    background-color: #a8deea33;
+    height:75%;
+    width: 75%;     
 }

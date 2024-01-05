@@ -1,0 +1,372 @@
+/* Universal Styles */
+
+*{    
+    font-size: 16px;    
+    padding: 0;
+}
+
+h1{
+    font-family: "kanit", sans-serif ;
+    font-weight: 700;
+    font-size: 1.6875rem
+}
+
+h2{
+    font-family: "kanit", sans-serif ;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+h3{
+    font-family: "kanit", sans-serif ;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+h4{
+    font-family: "kanit", sans-serif ;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+h5{
+    font-family: "kanit", sans-serif ;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+header{
+    max-width: 100%;    
+    height: 7rem;  
+    background-color: rgb(5, 189, 100) ; 
+    border-radius: 10px; 
+    border: 3px solid rgb(92, 90, 90);
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    left: 0;
+    
+    
+    /* margin: 0 auto; */
+       
+}
+
+.top{
+    display: flex;    
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 0.7rem;
+    margin-right: 1.5rem;
+}
+
+.top h1{    
+    text-transform: uppercase;
+    text-height: 1rem;
+   
+}
+
+#logo{
+    height: 7rem;
+    width: 7rem;
+    margin-left: 0;
+}
+
+header li{
+    display: inline; 
+    margin-left: 1.5rem;   
+}
+
+header a{
+    text-decoration: none;
+    font-family: "kanit", sans-serif ;
+    font-size: 1rem;
+    color: black;
+}
+
+.images{
+    max-width: 100%;
+}
+
+main{
+    position: relative;
+    top:7rem;   
+    margin-top: 0;    
+}
+
+.banner1{
+    background-image: url('./img/koto.jpg');
+    background-size: cover;
+    max-width: 55rem;
+    height: 30rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25%;    
+}
+
+.banner1 h2{
+    text-align: center;
+    line-height:  4rem; 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: 600;  
+    color: rgb(237, 227, 227);
+    font-size: 40px;
+    text-shadow: 3px 1px rgb(6, 2, 0);
+  
+}
+
+.banner2{
+    margin-top: 4rem;
+    padding-left: 2rem ;
+
+}
+
+.Choice{
+    max-width: 50rem;
+    background-color: rgb(167, 167, 24);
+    margin: 1rem auto;
+    border-radius: 2%;
+    padding-bottom: 2rem;
+    /* border: 3px solid rgb(186, 23, 23); */
+}
+
+.button{
+    padding: 1.5rem 3rem;
+    background-color: transparent;
+    text-align: center;
+    border-radius: 4px;
+    margin-bottom: 1rem;    
+    margin: 0 auto;
+}
+
+.banner2 h3{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.products{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem auto;
+}
+
+.product{    
+    max-width: 25rem;
+    padding-left: 2rem ;
+    background-color: aquamarine;
+}
+
+.products .product .images{
+    height: 50%;
+    width: 70%;
+    border-radius: 4%;
+}
+
+.team{
+    background-color: rgb(88, 87, 89);
+    height:auto;
+    padding-bottom: 1rem;
+}
+.team .button {
+    margin: 0 auto ;
+}
+.team h3{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.team-pic{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.bio{
+    width: 25rem;    
+    background-color: rgb(223, 219, 228);
+    border-radius: 2%;
+    padding: 0 1rem;
+
+}
+
+.bio img{
+    height: 70%;
+    width: 100%;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+
+
+}
+
+footer {
+    background-color: rgba(36, 33, 39, 0.126);
+    position: relative;
+    top: 7rem;
+    padding-bottom: 1rem;
+    
+}
+
+footer .contact{ 
+    margin-bottom: 0;
+}
+footer p, span{
+    font-family: "kanit", sans-serif ;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+/* Tablet Design  */
+
+@media only screen and (max-width: 760px){
+
+    /* header */
+
+     header{
+        margin-left: 0;
+        
+    }
+    
+    .top{
+        width:95%;
+        align-items: center;
+        
+    } 
+
+
+    #logo{
+        max-height: 4rem;
+        max-width: 4rem; */
+        margin-left: 0;
+    }
+
+    .top-banner {
+        /* flex-basis: 25rem;
+        flex-shrink: 2;*/
+        min-width: 17rem;
+        /* background-color: aliceblue; */
+        margin-left: 0.2rem;
+        padding-left: 0.2rem;
+    } 
+    
+    .top h1{
+         font-size: 1.2rem;
+       
+    }
+    
+    .top li{
+        display: block ;
+        margin-bottom: 0.3rem;
+        margin-left: 1rem;
+    }
+
+    .list-button{
+        padding: .1rem .1rem;
+        background-color: rgb(164, 164, 148);
+        text-align:start;
+        border-radius: 10%;
+        box-shadow: 1px 4px;
+    }
+
+   /* Main */
+
+   .banner1{
+    background-image: url('./img/koto.jpg');
+    background-size: cover;    
+    max-width: 30rem;
+    height: 20rem;      
+}
+
+   .banner1 h2{
+    text-align: center;
+    line-height:  2rem; 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: 600;  
+    color: rgb(229, 220, 220);
+    font-size: 20px;
+    text-shadow: 3px 1px rgb(90, 32, 5);  
+}
+
+.banner2{
+    margin: 2rem auto;
+    /* background-color: black; */
+    padding-left: 0;
+    
+}
+
+.products{
+    display:block ;
+}
+.product{    
+    padding: 1rem 1rem ;
+    border-radius: 2%;
+    margin: 1rem auto;
+    max-width: 70%;
+    
+}
+
+.product h4{
+    margin: 0 auto;
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+
+.products .product .images{
+    max-height: 80%;
+    width: 60%;
+    border-radius: 2%;
+}
+
+.team .button {
+    margin: 0.7rem auto ;
+    padding: 0.5rem 0.5rem;
+    /* border: 2px solid black; */
+}
+.team h3{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.bio{
+    padding: 0.5rem;
+}
+.bio h4, h5, p {
+    margin: 0.2rem ;
+    font-size: small;
+}
+
+/* footer */
+
+
+footer p, span{
+    font-family: "kanit", sans-serif ;
+    font-weight: 400;
+    font-size: 10px;
+    margin: 0.1rem ;
+}
+
+}
+
+
+@media only screen and (max-width: 450px){
+
+    #logo{
+        max-height: 6rem;
+        max-width: 6rem; */
+        margin-left: 1rem;
+    }
+
+    .top-banner {
+        display: none;
+    } 
+    
+    
+    .top ul {
+        display: inline-flex ;        
+        margin-left: 1rem;
+    }
+
+}
